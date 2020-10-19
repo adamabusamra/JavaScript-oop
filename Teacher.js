@@ -4,14 +4,20 @@ class Teacher extends Student {
     this.salary = salary;
     this.subjects = subjects;
   }
+  Salary() {
+    return Number(this.salary);
+  }
+  Subjects() {
+    return Array.from(this.subjects.split(","));
+  }
 }
 let teacher1 = new Teacher(
   "800",
-  "English, Arabic, Math, science",
+  "[English, Arabic, Math, science]",
   "96432",
   "Sadi",
   "Sadi@orange.com",
   "0777788888"
 );
-console.log(teacher1.salary);
-console.log(teacher1.subjects);
+console.log(teacher1.Salary());
+console.log(teacher1.Subjects());

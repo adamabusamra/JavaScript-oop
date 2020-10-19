@@ -5,6 +5,12 @@ class Student {
     this.email = email;
     this.mobile_number = mobile_number;
   }
+  Name() {
+    return this.name;
+  }
+  Mobile() {
+    return Number(this.mobile_number);
+  }
 }
 
 let student1 = new Student(
@@ -14,5 +20,5 @@ let student1 = new Student(
   "0777777777"
 );
 
-console.log(student1.name);
-console.log(student1.mobile_number);
+console.log(student1.Name());
+console.log(student1.Mobile());
